@@ -3,42 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mato Energy Limited - Energy Solutions</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mato Energy Limited - Oil & Gas Services</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Mato Energy Limited</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="booking.html">Book Now</a></li>
+        <nav class="container">
+            <div class="logo">MATO ENERGY LIMITED</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Service</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Reliable Energy Solutions</h2>
-            <p>Providing top-quality energy services for businesses and homes</p>
-            <a href="booking.html" class="cta-button">Book a Service</a>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>MATO ENERGY LIMITED</h1>
+                <p>Premium Oil & Gas Services | Drilling Solutions | Marine Equipment</p>
+                <a href="#booking" class="cta-button">Book Our Services</a>
+            </div>
         </section>
 
-        <section class="about">
-            <h3>About Mato Energy</h3>
-            <p>We specialize in delivering efficient and sustainable energy solutions tailored to your needs.</p>
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Drilling Fluids Systems</h3>
+                        <p>Complete drilling mud systems and engineering solutions for optimal drilling performance and wellbore stability.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Chemicals & Engineering</h3>
+                        <p>Specialized chemical solutions and engineering services for oil and gas operations, ensuring efficiency and safety.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Solids Control & Brine Filtration</h3>
+                        <p>Advanced solids control systems and brine filtration technologies for clean drilling operations.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Waste Management</h3>
+                        <p>Comprehensive waste management solutions for environmentally responsible oil and gas operations.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Marine Equipment</h3>
+                        <p>Quality marine equipment supply and support services for offshore operations and maritime projects.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Training Services</h3>
+                        <p>Professional training programs for mud engineering, drilling operations, and safety protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <div class="booking-form">
+                    <h2>Book Our Services</h2>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-name">Contact Person *</label>
+                            <input type="text" id="contact-name" name="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="drilling-fluids">Drilling Fluids Systems</option>
+                                <option value="chemicals">Chemicals & Engineering</option>
+                                <option value="solids-control">Solids Control & Brine Filtration</option>
+                                <option value="waste-management">Waste Management</option>
+                                <option value="marine-equipment">Marine Equipment</option>
+                                <option value="training">Training Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-details">Project Details</label>
+                            <textarea id="project-details" name="project-details" rows="4" placeholder="Please describe your project requirements..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Start Date</label>
+                            <input type="date" id="preferred-date" name="preferred-date">
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Booking Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Phone</h3>
+                        <p>+234 803 123 4567</p>
+                        <p>+234 805 987 6543</p>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>info@matoenergy.com</p>
+                        <p>services@matoenergy.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Address</h3>
+                        <p>123 Energy Drive<br>
+                        Port Harcourt, Rivers State<br>
+                        Nigeria</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Mato Energy Limited. All rights reserved.</p>
-        <p>Contact: <a href="mailto:info@matoenergy.com">info@matoenergy.com</a> | <a href="tel:+1234567890">+123 456 7890</a></p>
+        <div class="container">
+            <p>&copy; 2025 Mato Energy Limited. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Booking Submitted Successfully!</h2>
+            <p>Thank you for your interest in our services. We will contact you within 24 hours to discuss your requirements.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
